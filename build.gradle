@@ -1,0 +1,12 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+//    compile 'org.codehaus.groovy:groovy-all:2.3.11' // Groovy支持(远程)
+    compile localGroovy() // Groovy支持(本地)
+    compile gradleApi() // GradleAPI支持
+}
